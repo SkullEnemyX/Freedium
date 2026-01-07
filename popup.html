@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    h1 {
+      font-size: 16px;
+      margin: 0;
+      color: #333;
+    }
+    .url-input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .buttons {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+    button {
+      flex: 1;
+      padding: 8px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    .info {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+    .error {
+      color: #d93025;
+      font-size: 12px;
+      margin-top: 5px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icon48.png" class="icon" alt="Freedium Mirror Icon">
+    <h1>Freedium Mirror</h1>
+  </div>
+  
+  <input type="text" id="urlInput" class="url-input" placeholder="Paste Medium URL here">
+  
+  <div class="buttons">
+    <button id="convertBtn">Open in Freedium</button>
+    <button id="copyBtn">Copy Link</button>
+  </div>
+  
+  <div class="info">
+    <p><strong>How to use:</strong></p>
+    <p>1. Click the extension icon on any Medium article</p>
+    <p>2. Or right-click → "Open in Freedium Mirror"</p>
+    <p>3. Or use keyboard shortcut (set in chrome://extensions/shortcuts)</p>
+  </div>
+  
+  <div id="error" class="error"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
