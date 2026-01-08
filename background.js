@@ -60,17 +60,4 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     }
   }
 });
-
-// Optional: Keyboard shortcut support
-chrome.commands.onCommand.addListener((command) => {
-  if (command === "open-in-freedium") {
-    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-      if (tabs[0]) {
-        const freediumUrl = convertToFreedium(tabs[0].url);
-        if (freediumUrl) {
-          chrome.tabs.create({ url: freediumUrl, active: true });
-        }
-      }
-    });
-  }
-});
+// END OF FILE - No extra } here
