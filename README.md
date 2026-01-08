@@ -29,20 +29,18 @@ Converted: https://freedium-mirror.cfd/medium.com/author/some-article-12345
 The core logic is contained in the `convertToFreedium()` function within `background.js`.
 
 ## 📁 Project Structure
-freedium-mirror-extension/
-├── manifest.json # Extension configuration and permissions
 
-├── background.js # Core logic for URL conversion and event listeners
-
-├── popup.html # User interface for the extension popup
-
-├── popup.js # Logic for the popup interface
-
-├── icons/
-│ ├── icon16.png # Extension icon (16x16)
-│ ├── icon48.png # Extension icon (48x48)
-│ └── icon128.png # Extension icon (128x128)
-└── README.md # This file
+    freedium-mirror-extension/
+    ├── manifest.json          # Extension configuration and permissions
+    ├── background.js          # Core logic for URL conversion and event listeners
+    ├── popup.html             # User interface for the extension popup
+    ├── popup.js               # Logic for the popup interface
+    ├── icons/
+    │   ├── icon16.png         # Extension icon (16x16)
+    │   ├── icon48.png         # Extension icon (48x48)
+    │   └── icon128.png        # Extension icon (128x128)
+    ├── LICENSE                # MIT License file
+    └── README.md              # This file
 
 
 ## 🚀 Local Installation (Developer Mode)
